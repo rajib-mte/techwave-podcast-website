@@ -1,8 +1,73 @@
-body {
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-color {
+  background-color: #1a0b2e;
+}
+.inter-font {
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* Shared style */
+.primary-btn {
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 10000px;
+  background: linear-gradient(
+    25deg,
+    rgba(247, 233, 63, 1) 15%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  cursor: pointer;
+  align-items: center;
+  gap: 4px;
+}
+
+.secondary-btn {
+  padding: 12px 20px;
+  border: 1px solid #00ff88;
+  border-radius: 10000px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ff88;
+  background-color: transparent;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.spotify-btn {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 8px;
+}
+
+.heading-text {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+/* top-bar styles */
 #top-bar {
   width: 100px;
   /* border: 2px solid black; */
@@ -10,4 +75,11 @@ body {
   color: #4c3d5f;
   font-size: 10px;
   font-weight: 300;
+}
+
+/* navbar related style */
+
+body {
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
