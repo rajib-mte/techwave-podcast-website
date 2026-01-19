@@ -78,8 +78,141 @@
 }
 
 /* navbar related style */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  height: 92px;
+  padding: 1rem 12.5rem;
+}
 
-body {
+.brand {
+  cursor: pointer;
+}
+.menu {
+  list-style: none;
+  gap: 2rem;
+}
+
+.menu-items {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: white;
+}
+
+/* banner section related style */
+.hero {
+  background-image: url("assets/hero-bg.png");
+  max-width: 1600px;
+  height: 760px;
+  justify-content: center;
+  align-items: center;
+  padding: 101px 525px;
+}
+
+.hero-container {
+  max-width: 550px;
+}
+
+.hero-img {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 350px;
+  height: 350px;
+}
+
+.new-badge {
+  position: absolute;
+  top: 22%;
+  right: 43%;
+  z-index: 5;
+  justify-content: flex-end;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a0b2e;
+  background-color: #00ff88;
+  border-radius: 1000px;
+  padding: 8px 16px;
+  box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+}
+.hero-circle {
+  position: absolute;
+  z-index: 1;
+}
+
+.microphone {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-container h1 {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.hero-container p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.action-btn {
+  gap: 10px;
+  justify-content: center;
+}
+
+/* about related style */
+.about {
+  padding: 50px 200px 120px 200px;
+  background-color: #1a0b2e;
+}
+
+.about-container {
+  max-width: 1200px;
+}
+
+.about-text {
+  text-align: center;
+  /* max-width: 1200px; */
+}
+
+.about-text-description {
+  font-size: 1rem;
+  line-height: 30px;
+  margin-bottom: 80px;
+  color: white;
+  opacity: 80%;
+  max-width: 795px;
+}
+
+.about-info {
+  justify-content: space-between;
+  text-align: center;
+}
+
+.about-info-heading {
+  color: #00ff88;
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.about-info-description {
+  font-size: 1rem;
+  line-height: 20px;
+  color: white;
+  opacity: 80%;
+  text-transform: uppercase;
+}
+
+/* body {
   min-height: 100vh;
   font-family: "Inter", sans-serif;
-}
+} */
