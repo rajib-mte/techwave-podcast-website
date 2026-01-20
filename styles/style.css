@@ -433,7 +433,7 @@ header {
 
 /* footer related style */
 footer {
-  background-image: url("/images/footer-bg.png");
+  background-image: url("../images/footer-bg.png");
   background-repeat: no-repeat;
   max-width: 1600px;
   height: 412px;

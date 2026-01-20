@@ -162,7 +162,8 @@
 
   /* footer related style */
   footer {
-    background-image: url("../images/bg\ footer-mobile.png");
+    background-image: url("../images/footer-bg.png");
+    background-size: 50px auto;
     vertical-align: middle;
     margin: 0 auto;
     justify-content: center;
