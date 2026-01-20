@@ -105,13 +105,39 @@ header {
   gap: 2rem;
 }
 .menu-item {
+  position: relative;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
   line-height: 120%;
-  opacity: 90%;
+  opacity: 0.9;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
 }
+
+/* Animated underline */
+.menu-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+  transition: width 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #9100f8;
+  opacity: 1;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+}
+
 /* hero related style */
 .hero {
   background-image: url("../images/hero-bg.png");
