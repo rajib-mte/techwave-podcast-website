@@ -435,8 +435,9 @@ header {
 footer {
   background-image: url("../images/footer-bg.png");
   background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 412px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 
 .footer-container {
@@ -451,7 +452,8 @@ footer {
 
 .footer-icons {
   display: flex;
-  gap: 2.5rem;
+  gap: 4.5rem;
+  width: 50%;
 }
 
 .spotify {
