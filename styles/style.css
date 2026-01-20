@@ -34,6 +34,21 @@
   cursor: pointer;
 }
 
+/* .secondary-btn {
+  border: 1px solid #00ff88;
+  border-radius: 10000px;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ff88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+} */
+
 .secondary-btn {
   border: 1px solid #00ff88;
   border-radius: 10000px;
@@ -47,6 +62,41 @@
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Gradient fill animation */
+.secondary-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #00ff888f, #9100f870);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+/* Keep text & icon above animation */
+.secondary-btn span,
+.secondary-btn img {
+  position: relative;
+  z-index: 1;
+}
+
+.secondary-btn:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.4);
+}
+
+.secondary-btn:hover::before {
+  opacity: 1;
 }
 
 .btn-img {
